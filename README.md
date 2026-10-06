@@ -1,6 +1,10 @@
 # Subspace (Nested Workspaces) for Omarchy
 
-Named, numbered Hyprland window groups in the Omarchy Quattro bar.
+Ever wondered what it would be like to have workspaces within workspaces? I tried
+it, and now I can't live without it.
+
+Subspace brings that workflow to Omarchy Quattro with named, numbered Hyprland
+window groups in the top bar.
 
 ![Omarchy workspace numbers next to a four-window Subspace named Leetcode](preview.png)
 
