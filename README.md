@@ -60,6 +60,25 @@ omarchy bar move pietrovos.subspace --section left
 Place it next to the workspace widget using the bar layout controls if desired.
 It works with the stock workspace widget; no custom workspace plugin is required.
 
+## Disable the in-window groupbars (recommended)
+
+Use Subspace's top-bar tabs as your group controls and remove the extra tab bars
+inside each window. Add this to `~/.config/hypr/looknfeel.lua`:
+
+```lua
+hl.config({ group = { groupbar = { enabled = false } } })
+```
+
+Apply the change and check for config errors:
+
+```sh
+hyprctl reload
+hyprctl configerrors
+```
+
+This is the setup shown in the screenshot and video. Plugin installation does not
+apply this setting automatically. Remove it if you want the in-window groupbars back.
+
 ## Use without installing shortcuts
 
 Omarchy already provides:
@@ -141,18 +160,6 @@ To move a workspace's entire layout, including its subspaces, use the optional
 swap with workspaces 1–9; `Ctrl+Shift+Super+0` targets workspace 10. Focus follows
 your original windows. This is separate from `Alt+Shift+number`, which only
 reorders tabs within a group, and needs its own explicit setup.
-
-## Optional appearance
-
-Hyprland's built-in in-window groupbar stays enabled by default. If you prefer
-only the top-bar tabs, add this to your own `~/.config/hypr/looknfeel.lua`:
-
-```lua
-hl.config({ group = { groupbar = { enabled = false } } })
-```
-
-Then run `hyprctl reload` and `hyprctl configerrors`. Remove that setting to restore
-the default groupbar. This appearance change is separate from shortcut setup.
 
 ## Name storage and lifecycle
 
