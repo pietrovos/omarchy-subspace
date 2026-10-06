@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "pietrovos.subspace",
-  "name": "Subspace",
+  "name": "Subspace (Nested Workspaces)",
   "version": "1.0.1",
   "author": "pietrovos",
   "license": "MIT",
@@ -9,7 +9,7 @@
   "kinds": ["bar-widget"],
   "entryPoints": { "barWidget": "GroupTabs.qml" },
   "barWidget": {
-    "displayName": "Subspace",
+    "displayName": "Subspace (Nested Workspaces)",
     "description": "Switch between grouped windows and name the focused group.",
     "category": "Compositor",
     "allowMultiple": false,

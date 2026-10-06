@@ -1,4 +1,4 @@
-# Subspace for Omarchy
+# Subspace (Nested Workspaces) for Omarchy
 
 Named, numbered Hyprland window groups in the Omarchy Quattro bar.
 
