@@ -2,13 +2,23 @@
 
 Named, numbered Hyprland window groups in the Omarchy Quattro bar.
 
-![Subspace with four grouped windows and a Coding label](preview.png)
+![Omarchy workspace numbers next to a four-window Subspace named Leetcode](preview.png)
 
-*Illustrative preview rendered from the plugin with a four-window test group.*
+*Subspace in my top bar, showing a four-window group named Leetcode beside the
+workspace numbers. Theme and workspace-widget appearance reflect my personal setup.*
 
 A subspace is a native Hyprland window group: several windows sharing one tile,
 with one visible at a time. Subspace puts that group's tabs and optional name in
 the top bar. It does not create a second workspace system.
+
+## Video walkthrough
+
+[Watch or download the demo with audio (MP4, 2m 20s)](https://github.com/pietrovos/omarchy-subspace/releases/download/v1.0.1/subspace-demo.mp4).
+
+The video shows my personal Subspace workflow. The `Ctrl+Shift+Super+number`
+workspace-swap shortcut mentioned in it is a separate optional customization:
+see the [workspace-swap setup and usage guide](docs/workspace-swap.md).
+The regular optional shortcut installer does not install workspace swapping.
 
 ## Features
 
@@ -19,6 +29,7 @@ the top bar. It does not create a second workspace system.
 - Theme-aware colors and a single rounded border around the tabs and name.
 - Optional Alt-number selection, tab reordering, and rename shortcuts.
 - All helpers ship inside the plugin. No personal dotfiles are needed.
+- Includes a video walkthrough and an optional whole-workspace swap configuration.
 
 The widget appears only while a grouped window is focused. Horizontal bars are
 supported; the widget is hidden on vertical bars.
@@ -119,6 +130,14 @@ To customize shortcuts, remove the managed loader and add your preferred binding
 to your own config, using `bindings.lua` in this repository as a reference. Plugin
 updates replace files inside the installed plugin directory.
 
+### Moving whole layouts: the shortcut from the video
+
+To move a workspace's entire layout, including its subspaces, use the optional
+[workspace-swap guide](docs/workspace-swap.md). `Ctrl+Shift+Super+1` through `9`
+swap with workspaces 1–9; `Ctrl+Shift+Super+0` targets workspace 10. Focus follows
+your original windows. This is separate from `Alt+Shift+number`, which only
+reorders tabs within a group, and needs its own explicit setup.
+
 ## Optional appearance
 
 Hyprland's built-in in-window groupbar stays enabled by default. If you prefer
@@ -154,6 +173,9 @@ omarchy plugin update pietrovos.subspace
 If an updated widget remains stale, restart the shell with `omarchy restart shell`.
 
 ## Remove
+
+If you enabled the optional workspace-swap example, first remove its loader block
+as described in the [guide](docs/workspace-swap.md#remove-the-workspace-swap-shortcuts).
 
 If you installed the optional shortcuts, remove them **before** removing the plugin:
 
