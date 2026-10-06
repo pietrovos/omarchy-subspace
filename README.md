@@ -1,7 +1,7 @@
 # Subspace (Nested Workspaces) for Omarchy
 
 Ever wondered what it would be like to have workspaces within workspaces? I tried
-it, and now I can't live without it.
+it, and now I genuinely can't live without it :D
 
 Subspace brings that workflow to Omarchy Quattro with named, numbered Hyprland
 window groups in the top bar.
